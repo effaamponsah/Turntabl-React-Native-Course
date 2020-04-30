@@ -1,10 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import Another from './Another';
+import Functional from './Functional';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Another
+        person_name="James"
+      />
+      <Functional
+        person_name="Fiifi"
+      />
     </View>
   );
 }
