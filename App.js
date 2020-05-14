@@ -2,18 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Another from './Another';
 import Functional from './Functional';
+import AuthStack from './navigation/AuthStack';
+import RootNavigator from './navigation/RootNavigator';
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Another
-        person_name="James"
-      />
-      <Functional
-        person_name="Fiifi"
-      />
-    </View>
+    <RootNavigator />
   );
 }
 
