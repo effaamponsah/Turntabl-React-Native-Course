@@ -4,11 +4,15 @@ import Another from './Another';
 import Functional from './Functional';
 import AuthStack from './navigation/AuthStack';
 import RootNavigator from './navigation/RootNavigator';
+import { Provider as PaperProvider } from 'react-native-paper';
+import theme from './theme/theme';
 
 export default function App() {
 
   return (
-    <RootNavigator />
+    <PaperProvider theme={theme}>
+      <RootNavigator />
+    </PaperProvider>
   );
 }
 

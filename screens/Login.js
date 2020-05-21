@@ -1,19 +1,21 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-
+import { Button } from 'react-native-paper';
 const Login = ({ navigation, ...props }) => {
 
     const _toRegister = () => {
-        navigation.navigate('Register')
+        navigation.navigate('Reset')
     }
 
     return (
         <View style={styles.container}>
             <Text>This is the Login screen</Text>
-
-            <TouchableOpacity style={{ padding: 15, backgroundColor: 'blue' }} onPress={_toRegister}>
-                <Text style={{ color: '#fff' }}>Press me</Text>
-            </TouchableOpacity>
+            <Button
+            onPress={_toRegister}
+                mode="contained"
+            >
+                Press Me
+            </Button>
         </View>
     );
 }
